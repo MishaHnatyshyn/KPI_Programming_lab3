@@ -17,9 +17,9 @@ void write10Best(string,vector<Country*>);
 
 int main() {
     int count;
-    vector<Country*> participants = countryListCreate("/home/mhnatyshyn/CLionProjects/Lab/eurovision.csv", &count);
+    vector<Country*> participants = countryListCreate("../eurovision.csv", &count);
     vector<Country*> results = pointsCalculate(participants, count);
-    write10Best("/home/mhnatyshyn/CLionProjects/Lab/results.csv",results);
+    write10Best("../results.csv",results);
     return 0;
 }
 
